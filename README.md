@@ -1,32 +1,32 @@
-# `rein` - A stupidly-simple PHP test runner and reporter
+# Rein - A stupidly-simple PHP test runner and reporter
 
-## Why use `rein`
+## Why use Rein
 
 You're a busy developer and you like the idea of automating tests but find most
 existing solutions much too bloated and cumbersome to deal with.
 
-`rein` consists of a single function within a single PHP file. The whole thing
+Rein consists of a single function within a single PHP file. The whole thing
 can be read and understood in less than 5 minutes. To run tests, simply provide
 a file or an array of files as an argument to the `rein_run()` function:
 
 ```php
 <?php
-include '/path/to/rein.php';
+require '/path/to/rein.php';
 rein_run('my_tests.php');
 ```
 
-`rein` will then include and scan the `my_tests.php` file for functions
-beginning with `test_`, executes them as tests and outputs a report. You can
-run this from the CLI or from the browser. `rein` will not dictate the way you
-organize your test files, how you bootstrap your tests, how you load your
-fixtures or what goes where and why; it's automated testing for grown-ups. The
-only thing it assumes is that you'll be using `assert()` in your tests.
+Rein will then include and scan the `my_tests.php` file for functions beginning
+with `test_`, executes them as tests and outputs a report. You can run this from
+the CLI or from the browser. Rein will not dictate the way you organize your
+test files, how you bootstrap your tests, how you load your fixtures or what
+goes where and why; it's automated testing for grown-ups. The only thing it
+assumes is that you'll be using `assert()` in your tests.
 
 ## Requirements
-`rein` requires PHP 5.3 or greater.
+Rein requires PHP 5.3 or greater.
 
 ## License
-`rein` is released under the [MIT license](http://opensource.org/licenses/MIT).
+Rein is released under the [MIT license](http://opensource.org/licenses/MIT).
 
 ## Testing in 5 minutes or less
 
@@ -94,7 +94,7 @@ Failed 2 of 5 assert(s) in 1 test(s) - completed in 0 seconds.
 -------------------------------------------------------------------------------
 ```
 
-By using the native `assert()` function, `rein` is able to report every failed
+By using the native `assert()` function, Rein is able to report every failed
 assertions in your test files. From the test result above, we know that our
 `hex2rgb()` function fails for at least one type of valid input: three-letter
 abbreviated hexadecimal colors. We can now try to fix our function as follows:

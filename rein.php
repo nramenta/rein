@@ -1,6 +1,6 @@
 <?php
 /**
- * rein - A stupidly-simple PHP test runner and reporter
+ * Rein - A stupidly-simple PHP test runner and reporter
  *
  * @author  Nofriandi Ramenta <nramenta@gmail.com>
  * @license http://en.wikipedia.org/wiki/MIT_License MIT
