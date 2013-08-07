@@ -7,12 +7,12 @@ existing solutions much too bloated and cumbersome to deal with.
 
 Rein consists of a single function within a single PHP file. The whole thing
 can be read and understood in less than 5 minutes. To run tests, simply provide
-a file or an array of files as an argument to the `rein_run()` function:
+a file or an array of files as an argument to the `Rein::run()` function:
 
 ```php
 <?php
 require '/path/to/rein.php';
-rein_run('my_tests.php');
+Rein::run('my_tests.php');
 ```
 
 Rein will then include and scan the `my_tests.php` file for functions beginning
@@ -60,7 +60,7 @@ And here's the example test file:
 include '/path/to/hex2rgb.php';
 include '/path/to/rein.php';
 
-rein_run(__FILE__); // run the current file
+Rein::run(__FILE__); // run the current file
 
 function test_hex2rgb()
 {
